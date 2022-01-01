@@ -15,6 +15,10 @@ public class Mentoria extends Conteudo {
         return XP_PADRAO + 20d;
     }
 
+    @Override
+    public double calcularXpPro() {
+        return XP_PADRAO + 40;
+    }
 
 
     public LocalDate getData() {

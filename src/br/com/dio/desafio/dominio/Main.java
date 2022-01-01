@@ -40,6 +40,7 @@ public class Main {
         devMarlon.setNome("Marlon");// Instanciando o nome;
         devMarlon.inscreverBootcamp(bootcamp);//inscrição no Bootcamp;
         System.out.println("Conteúdos inscritos Marlon " + devMarlon.getConteudosInscritos());
+        System.out.println("XP atual de Marlon " + devMarlon.calcularTotalXp());//Exibição de XP;
         devMarlon.progredir();//Progredindo no Bootcamp. Lógica feita na classe "Dev";
         devMarlon.progredir();//Progredindo pela segunda vez no Bootcamp. Lógica feita na classe "Dev";
         System.out.println("Atualização após progressão no curso: ");
@@ -63,6 +64,21 @@ public class Main {
         System.out.println("Conteúdos concluídos Marlon " + devMarlon.getConteudosConcluidos());
         System.out.println("XP atual de Dani " + devDani.calcularTotalXp());//Exibição de XP;
 
+        System.out.println("-------");
+
+        //Criação DevPro 3; Laisa;
+        DevPro devProLaisa = new DevPro();
+        devProLaisa.setNome("Laisa");
+        devProLaisa.inscreverBootcamp(bootcamp);
+        System.out.println("Conteúdos inscritos Laisa" + devProLaisa.getConteudosInscritos());
+        System.out.println("XP atual de Laisa " + devProLaisa.calcularTotalXpPro());
+        devProLaisa.progredir();
+        System.out.println("Atualização após progressão no curso: ");
+        System.out.println("Conteúdos inscritos após progressão Laisa " + devProLaisa.getConteudosInscritos());
+        System.out.println("XP atual de Laisa " + devProLaisa.calcularTotalXpPro()); //Progredindo no Bootcamp. Lógica feita na classe "Dev";
+        devProLaisa.progredir();
+        System.out.println("Conteúdos inscritos após progressão Laisa " + devProLaisa.getConteudosInscritos());
+        System.out.println("XP atual de Laisa " + devProLaisa.calcularTotalXpPro());
 
     }
 }

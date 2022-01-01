@@ -5,8 +5,11 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
 
-public class Dev {
+public class Dev extends DevPro {
 
+    protected Object conteudosInscritosPro;
+    protected Object nomePro;
+    protected Object conteudosConcluidosPro;
     private String nome;
     private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>(); // O "LinkedHashSet" foi utilizado porque só aceita uma inscrição;
     private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
@@ -32,6 +35,8 @@ public class Dev {
                     .mapToDouble(Conteudo::calcularXp)
                     .sum();
         }
+
+        
 
         public String getNome () {
             return nome;

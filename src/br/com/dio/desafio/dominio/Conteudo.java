@@ -3,11 +3,14 @@ package br.com.dio.desafio.dominio;
 public abstract class Conteudo {
 
     protected static double XP_PADRAO = 10d;
+    protected static double XP_PRO = 20D;
 
     private String titulo;
     private String descricao;
 
     public abstract double calcularXp();
+
+    public abstract double calcularXpPro();
 
     public String getTitulo() {
         return titulo;
