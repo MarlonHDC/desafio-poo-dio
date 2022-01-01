@@ -15,5 +15,5 @@ Através destas classes é possível criar e matricular um Dev em alguns
 cursos dentro do programa, fazê-los progredirem no curso com ganhos
 de XP e concluí-los na medida em que se progride.
 
-Ao final acrescentei a classe DevXpPro que ganha XP em drobro
+Ao final acrescentei a classe DevXpPro que ganha XP em dobro
 quando progride no Bootcamp.
